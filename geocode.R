@@ -5,7 +5,7 @@ library(readxl)
 
 
 agency.list <- read_excel('Agency List.xlsx')
-retailer.fbst <- read_csv('retailer_fbst.csv')
+retailer.fbst <- readr::read_csv('retailer_fbst.csv')
 
 
 agency.list <- agency.list %>% dplyr::rename(name = "Agency Name")
